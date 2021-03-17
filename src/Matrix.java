@@ -7,7 +7,7 @@ public class Matrix {
         this.m = new  int[sor][oszlop];
         for (int i = 0; i < sor; i++) {
             for (int j = 0; j < oszlop; j++) {
-                m[i][j] = rnd.nextInt(100);
+                m[i][j] = rnd.nextInt(199)-99;
             }
         }
     }
@@ -61,5 +61,28 @@ public class Matrix {
             }
         }
         return osszeg;
+    }
+    public int pozitivDarab(){
+      int darab = 0;
+      for (int[] matrixsor : m){
+          for (int szam:matrixsor
+               ) {
+              if (szam>0){
+                  darab+=szam;
+              }
+          }}
+      return darab;
+    }
+
+    public int maxErtek(){
+        int legnagyobb = m[0][0];
+        for (int[] matrixsor : m){
+            for (int szam:matrixsor
+            ) {
+                if (szam> legnagyobb){
+                    legnagyobb = szam;
+                }
+            }}
+        return legnagyobb;
     }
 }

@@ -4,6 +4,9 @@ public class Main {
         System.out.println(m);
         System.out.println("\n");
         Matrix m2 = new Matrix(8,8);
+        System.out.println(m2);
         System.out.println(m2.matrixSum());
+        System.out.println(m2.pozitivDarab());
+        System.out.println(m2.maxErtek());
     }
 }
