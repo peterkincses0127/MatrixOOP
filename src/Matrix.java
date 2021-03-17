@@ -85,4 +85,11 @@ public class Matrix {
             }}
         return legnagyobb;
     }
+
+    public boolean negyzete(){
+        for (int[] matrixsor: m
+             ) {
+
+        }
+    }
 }
